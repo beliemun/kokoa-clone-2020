@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full large fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa clone Account, log in with your email or phone number</p>
+    </header>
+
+    <!-- action은 어떤 페이지로 data를 보낼 것인지 정한다. -->
+    <!-- post : 백엔드 서버 전송 / get : 보완 취약, id,pw 보내면 안됨, url에 포함되어도 상관없는 정보 전달 -->
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number" required />
+        <input name="password" type="password" placeholder="Password" required />
+        <input type="submit" value="Log In" />
+        <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <!-- 스크립트는 바디문의 항상 마지막에 있어야 한다 -->
+    <script src="https://kit.fontawesome.com/5993050df4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
