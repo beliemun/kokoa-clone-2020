@@ -8,6 +8,7 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-componenet.css";
+@import "components/badge.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -19,16 +20,6 @@ body {
   height: 1000vh;
 }
 
-.welcome-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 90px 0;
-}
-
-.welcome-header__title {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 40px;
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
